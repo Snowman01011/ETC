@@ -1,5 +1,7 @@
 
 import { Link } from "react-router-dom"
+import logo from "../assets/logo.png"
+import Button from "../ui/button"
 import "./global.css"
 
 function Navbar() {
@@ -7,10 +9,17 @@ function Navbar() {
         <>
             <nav 
                 className="w-11/12 rounded-md bg-clip-padding backdrop-filter 
-                backdrop-blur-xl bg-opacity-10 fixed top-0 py-4 flex items-center 
-                justify-center m-4 gap-3"
+                backdrop-blur-xl bg-opacity-10 fixed top-0 py-2 flex items-center 
+                m-2 gap-40 justify-evenly "
                 >
+                
+                <img src={logo} alt=" "
+                    className="h-30 w-auto"
+                />
 
+                <div
+                    className="flex gap-6"
+                >
                 <Link 
                     to="/" 
                     className="font-sans font-semibold text-gray-800 text-1xl 
@@ -46,6 +55,10 @@ function Navbar() {
                 >
                    Contact
                 </Link>
+
+                <Button ButtonValue="Contact" />
+                </div>
+
 
             </nav>
         </>

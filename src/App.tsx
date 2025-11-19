@@ -10,8 +10,13 @@ import Contact from "./routes/Contact"
 function App(){
   return(
     <>
-      <div className="w-screen min-h-screen flex bg-gray-300 py-0 m-0 box-border justify-center">
+      <div 
+        className="w-screen min-h-screen flex bg-gray-300 
+        py-0 m-0 box-border justify-center"
+      >
+
         <Navbar />
+        
         <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="/Courses" element={<Courses />}/>

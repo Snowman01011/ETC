@@ -9,7 +9,12 @@ import Contact from "./pages/Contact"
 function App() {
   return(
     <>
-      <Nav />
+      <header
+        className="w-screen h-20 flex items-center justify-center"
+      >
+        
+        <Nav />
+      </header>
 
       <Routes>
           <Route path="/" element={<Home />}/>
